@@ -1,0 +1,286 @@
+@font-face{ /* ред. 20.12 */
+
+font-family: 'Yandex Sans Text Web';
+
+src: url('fonts/YandexSansDisplay-Regular.woff2') format('woff2');
+
+font-weight: 400;
+
+font-style: normal;
+
+}
+@font-face{ /* ред. 20.12 */
+
+font-family: 'Yandex Sans Text Web';
+
+src: url('fonts/YandexSansText-Light.woff2') format('woff2');
+
+font-weight: 300;
+
+font-style: normal;
+
+}
+@font-face{ /* ред. 20.12 */
+
+font-family: 'Yandex Sans Text Web';
+
+src: url('fonts/YandexSansDisplay-Bold.woff2') format('woff2');
+
+font-weight: 700;
+
+font-style: normal;
+
+}
+@font-face{ /* ред. 20.12 */
+
+font-family: 'Yandex Sans Text Web';
+
+src: url('fonts/YandexSansDisplay-RegularItalic.woff2') format('woff2');
+
+font-weight: 400;
+
+font-style: italic;
+
+}
+/* div :first-child :last-child {у первого ребенка выбрать последнего
+	color: red;
+} */
+html {
+	height: 100%;
+}
+body {
+		margin: 0;
+		display: flex; 
+		flex-direction: column;
+		height: 100%;
+		font-family: 'Yandex Sans Text Web',Arial,Helvetica,sans-serif;
+}
+header {
+		flex: 0 0 auto;
+}
+/*the red header*/
+.upper_menu{
+	height: 70px;
+	background-color: #e61400;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	text-align: center;
+}
+.upper_menu a, .upper_menu span, .upper_menu div {
+	flex-grow: 1;
+}
+.yandex_logo {
+	background: url(images/yandex_logo.svg) right no-repeat;
+	display: inline-block;
+	width: 70px;
+	height: 26px;
+}
+.menu_item {
+	color: white;
+	opacity: .6;
+	font-size: 14px;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: 400;
+	transition: opacity .15s ease-in-out;
+}
+.menu_item:hover {
+	opacity: 1;
+}
+.user_name {
+	color: white;
+	opacity: .6;
+	transition: opacity .15s ease-in-out;
+	font-size: 13px;
+}
+.user_name:hover {
+	opacity: 1;
+}
+.hamburger_menu {
+	background: url(images/hamburger_menu.svg) no-repeat;
+	width: 30px;
+	height: 22px;
+	opacity: .6;
+	transition: opacity .15s ease-in-out;
+}
+.hamburger_menu:hover {
+	opacity: 1;
+}
+.blog_content {
+	height: 47px;
+	background: #f3f1ed;
+	font-size: 17px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.blog_content_list {
+	width: 437px;
+	text-align: center;
+}
+/* .blog_content_list:nth-child(2) {
+	font-family: Arial,Helvetica,sans-serif;
+} */
+.content_item {
+	padding: 0 15px;
+	line-height: 44px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.content_item:hover {
+	background: #DDDAD4;
+}
+.content_item:active {
+	color: red;
+}
+.search_icon {
+	width: 23px;
+	height: 22px;
+	background: url(https://yastatic.net/q/yablogs/v60.0/static/_/0PY9mi54QYJozDTpCvi10L3luuI.svg) 50% no-repeat;
+	opacity: .5;
+}
+.search_icon:hover {
+	opacity: 1;
+}
+main {
+		flex: 1 0 auto;
+		padding-top: 47px;
+}
+.content_wrapper{
+	width: 900px;
+	margin: 0 auto;
+}
+
+.summary p {
+	font-size: 18px;
+	font-style: italic;
+}
+.b_back::after {
+	font-size: 18px;
+	content: '/';
+}
+.b_back_link {
+	font-size: 18px;
+	color: #44b;
+	text-decoration: none;
+	font-weight: 300;
+	padding-right: 5px;
+}
+.b_back_link:hover {
+	color:red;
+}
+h1 {
+	font-size: 40px;
+	font-weight: 700;
+	margin: 27px 0;
+}
+h3 {
+	font-size: 25px;
+	margin: 0;
+	margin-left: 10px;
+	color: #0e2135;
+}
+.icon_block {
+	display: flex;
+	align-items: center;
+	margin-left: 30px;
+}
+.icon_item {
+	width: 23px;
+	height: 25px;
+	background: url(icons/send.svg) no-repeat;
+}
+.additional_info {
+	background: #f3f2ee;
+	color: #333;
+	text-align: justify;
+	line-height: 20px;
+	padding: 20px 50px;
+	font-size: 16px;
+	margin: 25px -50px;
+}
+h4 {
+	margin: 0;
+	font-size: 20px;
+	color: #646464;
+}
+.main_info {
+	font-size: 18px;
+	margin: 10px 0 27px;
+	font-weight: 300px;
+}
+table {
+	
+	border-collapse: collapse;
+	background: #f3f2ee;
+}
+thead {
+	color: #646464;
+	border: 1px solid #646464;
+}
+tr:nth-child(even), thead {
+	background: white;
+}
+tr td, tr th {
+	border: 1px solid #646464;
+	padding: 10px;
+}
+.comments {
+	background: #f7f7f7;
+	margin-top: 40px;
+	padding: 25px 0 30px;
+}
+.your_comment {
+	background: #eeedeb;
+	margin-top: 40px;
+	margin-bottom: 60px;
+	padding: 30px 35px;
+}	
+form {
+	width: 800px;
+}
+.avatar {
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+	overflow: hidden;
+	float: left;
+}
+textarea {
+	width: 670px;
+	height: 132px;
+	margin-left: 15px;
+	padding-left: 9px;
+	padding-top: 5px;
+	color: #999;
+	font-family: inherit;
+	font-size: inherit;
+}
+textarea:focus {
+	border: 1px solid rgba(178,142,0,.6);
+	box-shadow: 0 0 10px #fc0;
+	outline: none;
+}
+.under_comment {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding-top: 10px;
+}
+.guide_sign {
+	color: #999;
+	font-size: 12.8px;
+}
+button {
+	width: 88px;
+	height: 26px;
+	margin-left: 10px;
+	background-color: rgba(0,0,0,.08);
+	border-color: rgba(0,0,0,.08);
+	color: rgba(16, 16, 16, 0.3);
+}
+footer {
+		flex: 0 0 auto;
+}
